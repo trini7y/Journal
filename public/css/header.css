@@ -1,0 +1,25 @@
+.main_header{
+    background-color: #BAD7E9;
+    height: 90px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 3px;
+    margin-top: 3%;
+}
+
+.main_header_nav, ul{
+   margin-left: 4%;
+   padding-top: 2%;
+}
+
+.main_header_nav, ul > li{
+    text-decoration: none;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.main_header_nav, ul > li > a{
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+}
