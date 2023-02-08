@@ -1,5 +1,15 @@
 <%-include('includes/head.ejs')%>
+
 </head>
 <body>
-    <h4>Add product</h4>
+    <%-include('includes/navigation.ejs') %>
+    <main>
+        <form method="POST" action="/add-journal">
+            <div>
+                <input name="title" type="text" placeholder="Title">
+                <textarea name="description">
+            </div>
+            <button type="submit"> Add </button>
+        </form>
+    </main>
 </body>
