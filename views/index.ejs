@@ -1,10 +1,25 @@
 <%-include('includes/head.ejs') %>
-
 </head>
 <body>
     <%-include('includes/navigation.ejs') %>
     <main>
-        <h1>Hello There!!!!!!!!!!</h1>
+        <% if(journ.length > 0) {%>
+        <div class="grid">
+            <% for(let journal of journ) {%>
+            <article class="card">
+                <header class="card_header">
+                    <h3 class="card"><%= journal.title%></h3>
+                </header>
+
+                <div class="description">
+
+                </div>
+            </article>
+            <% } %>
+        </div>
+        <% } else { %>
+            <h1>This place looks empty</h1>
+        <% } %>
     </main>
 </body>
 </html>

@@ -5,12 +5,14 @@ const journal = []
 
 route.get('/add-journal', (req, res, next) => {
     res.render('add-journal', {pageTitle:'Add-Journal'})
-})
+});
 
-route.post('/', (req, res, net) => {
-    journal.push({})
+route.post('/add-journal', (req, res, net) => {
+    journal.push({title: req.body.title, desc: req.body.description})
+    console.log(journal)
     res.redirect('/')
-})
+});
 
 
-module.exports = route;
+exports.routes = route;
+exports.journal = journal;
