@@ -2,24 +2,26 @@
 </head>
 <body>
     <%-include('includes/navigation.ejs') %>
-    <main>
+    <main class="main">
         <% if(journ.length > 0) {%>
         <div class="grid">
             <% for(let journal of journ) {%>
             <article class="card">
                 <header class="card_header">
-                    <h3 class="card"><%= journal.title%></h3>
+                    <h3 class="card"><%=journal.title%></h3>
                 </header>
-
+                <div class="image">
+                    <img class="card__image" src="/images/pexels-miguel-á-padriñán-3882516.jpg" alt="A dark and gold image" />
+                </div>
                 <div class="description">
-
+                    <p> <%=journal.desc %> </p>
                 </div>
             </article>
             <% } %>
         </div>
         <% } else { %>
             <h1>This place looks empty</h1>
-        <% } %>
+        <% } %> 
     </main>
 </body>
 </html>

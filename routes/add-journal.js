@@ -8,7 +8,7 @@ route.get('/add-journal', (req, res, next) => {
 });
 
 route.post('/add-journal', (req, res, net) => {
-    journal.push({title: req.body.title, desc: req.body.description})
+    journal.push({title: req.body.title, desc:req.body.description})
     console.log(journal)
     res.redirect('/')
 });
