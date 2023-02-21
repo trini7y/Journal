@@ -15,15 +15,16 @@ body{
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    gap: 5px;
-   border: 1px solid red;
+   /* border: 1px solid red; */
    height:100vh;
  }
 .card{
-   /* height: 30vh; */
-   width: 100%;
-   border:1px solid grey;
+   height: 30vh;
+   width: 80%;
+   /* border:1px solid grey; */
    border-radius: 2px;
    background: white;
+   border-radius: 3px;
 }
 .card_header{
    width:100%;

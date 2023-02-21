@@ -3,19 +3,22 @@ const route = express.Router();
 
 const journal = []
 
+
+
+
 route.get('/add-journal', (req, res, next) => {
     res.render('add-journal', {pageTitle:'Add-Journal'})
 });
 
-
-
 route.post('/add-journal', (req, res, next) => {
-    function identity() {
-      i = 0;
-      return i+=1;
+    if(req.push){
+      function identity() {
+        let counter = 0;
+        counter++
+        return counter;
+      };
     }
-    console.log( identity() );
-
+    // let iden = identity();  
     journal.push({id: identity(), title: req.body.title, desc:req.body.description})
     console.log(journal)
     res.redirect('/')
