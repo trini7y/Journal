@@ -29,6 +29,10 @@ body{
 .card_header{
    width:100%;
 }
+.card_header > .card_title{
+   padding: 3% 5%;
+
+}
 .image > .card__image{
    height:200px;
    width:100%;

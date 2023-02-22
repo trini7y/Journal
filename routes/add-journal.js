@@ -3,7 +3,16 @@ const route = express.Router();
 
 const journal = []
 
+//Increment ID
+class ID {
+  static currentId = 0;
+  static idIncrement = 1;
 
+  constructor() {
+    this.id = ID.currentId;
+    ID.currentId += ID.idIncrement;
+  }
+}
 
 
 route.get('/add-journal', (req, res, next) => {
@@ -11,15 +20,8 @@ route.get('/add-journal', (req, res, next) => {
 });
 
 route.post('/add-journal', (req, res, next) => {
-    if(req.push){
-      function identity() {
-        let counter = 0;
-        counter++
-        return counter;
-      };
-    }
-    // let iden = identity();  
-    journal.push({id: identity(), title: req.body.title, desc:req.body.description})
+    const identity = new ID();
+    journal.push({id: identity.id, title: req.body.title, desc:req.body.description})
     console.log(journal)
     res.redirect('/')
 });
