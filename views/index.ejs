@@ -8,7 +8,7 @@
             <% for(let journal of journ) {%>
             <article class="card">
                 <div class="card_header">
-                    <h3 class="card_title"><%=journal.title%></h3>
+                    <h3 class="card_title"><%=journal.title.length <= 35 ? journal.title : journal.title.slice(0,32) + "..."  %></h3>
                 </div>
                 <div class="image">
                     <img class="card__image" src="/images/pexels-miguel-á-padriñán-3882516.jpg" alt="A dark and gold image" />

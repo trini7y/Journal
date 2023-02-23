@@ -8,25 +8,25 @@
 }
 
 .main_header_nav, ul{
-   margin-left: 4%;
+   margin-left: 2%;
    padding-top: 2.5%;
 }
 
 .main_header_nav, ul > li{
     text-decoration: none;
     display: inline-block;
-    padding-right: 5%
+    padding-right: 2%
 }
 
 .main_header_nav, ul > li > a{
     text-decoration: none;
     color: black;
-    padding: 5px 20px 5px 20px;
+    padding: 1px 20px 5px 20px;
     font-size: 2em;
     font-family: 'Barlow', sans-serif;
-    border: thin solid #2B3467;
+    /* border: thin solid #2B3467; */
     border-radius: 3px;
-    transition: all 0.4s 0.3s ease-in-out;
+    transition: all 0.3s 0.3s ease-in-out;
 }
 
 .main_header_nav, ul > li > a:hover{

@@ -19,12 +19,13 @@ body{
    height:100vh;
  }
 .card{
-   height: 30vh;
+   height: 40vh;
    width: 80%;
    /* border:1px solid grey; */
    border-radius: 2px;
-   background: white;
+   background: #FCFFE7;
    border-radius: 3px;
+   color: rgba(0, 0, 0, 0.7);
 }
 .card_header{
    width:100%;
@@ -32,6 +33,13 @@ body{
 .card_header > .card_title{
    padding: 3% 5%;
 
+}
+.card > .description{
+   padding: 3% 5%;
+   height:10vh;
+   border: 1px solid red;
+   width: 90%;
+   margin: 0 auto;
 }
 .image > .card__image{
    height:200px;
