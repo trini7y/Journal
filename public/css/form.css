@@ -1,0 +1,11 @@
+.title{
+  border: 0;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 2%;
+  border-radius: 3px;
+  font-size:2em;
+  color:white;
+  background: linear-gradient(90deg, rgba(235,69,95,1) -30%, rgba(43,52,103,1) 120%);
+}
+

@@ -37,7 +37,7 @@ body{
 .card > .description{
    padding: 3% 5%;
    height:10vh;
-   border: 1px solid red;
+   /* border: 1px solid red; */
    width: 90%;
    margin: 0 auto;
 }
