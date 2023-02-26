@@ -5,7 +5,7 @@ const journal = []
 
 //Increment ID
 class ID {
-  static currentId = 0;
+  static currentId = 1  ;
   static idIncrement = 1;
 
   constructor() {
