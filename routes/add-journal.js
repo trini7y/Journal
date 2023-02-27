@@ -3,6 +3,20 @@ const route = express.Router();
 
 const journal = []
 
+//Add the date created
+function getMonthYear(){
+  let date = new Date();
+  let conv = String(date)
+  return (conv.slice(8, 16));
+}
+
+function getTime(){
+   let date = new Date();
+   let conv = String(date);
+   return (conv.slice(17, 21));
+}
+console.log(getMonthYear(), getTime())
+
 //Increment ID
 class ID {
   static currentId = 1  ;
@@ -13,6 +27,8 @@ class ID {
     ID.currentId += ID.idIncrement;
   }
 }
+
+
 
 
 route.get('/add-journal', (req, res, next) => {
