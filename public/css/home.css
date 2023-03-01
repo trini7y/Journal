@@ -42,6 +42,7 @@ body{
    /* border: 1px solid red; */
    width: 90%;
    margin: 0 auto;
+   font-style: italic;
 }
 .image > .card__image{
    height:200px;
@@ -49,4 +50,17 @@ body{
 }
 .for_empty_card{
    color:white;
+}
+.date{
+   width: 90%;
+   margin: 0 auto;
+}
+
+.dateTime{
+   font-style: italic;
+   font-size: 0.8em;
+}
+
+.dateTime > li:nth-child(1){
+   float: right;
 }

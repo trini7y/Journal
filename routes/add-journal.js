@@ -4,18 +4,20 @@ const route = express.Router();
 const journal = []
 
 //Add the date created
-function getMonthYear(){
+function getDayYear(){
   let date = new Date();
-  let conv = String(date)
-  return (conv.slice(8, 16));
+  let conv = date.toUTCString()
+  return (conv.slice(5, 16));
 }
 
 function getTime(){
-   let date = new Date();
-   let conv = String(date);
-   return (conv.slice(17, 21));
+  let date = new Date();
+  let conv = date.toUTCString();
+  return (conv.slice(17, 22));
 }
-console.log(getMonthYear(), getTime())
+
+console.log(getDayYear(), getTime());
+
 
 //Increment ID
 class ID {
@@ -30,7 +32,6 @@ class ID {
 
 
 
-
 route.get('/add-journal', (req, res, next) => {
     res.render("add-journal", {
       pageTitle: "Add-Journal",
@@ -42,7 +43,9 @@ route.post('/add-journal', (req, res, next) => {
     const identity = new ID();
     journal.push({id: identity.id, 
                   title: req.body.title, 
-                  desc:req.body.description})
+                  desc:req.body.description,
+                  date: getDayYear(),
+                  time: getTime()})
     console.log(journal)
     res.redirect('/')
 });
