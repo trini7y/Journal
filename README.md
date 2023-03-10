@@ -1,2 +1,2 @@
 # Journal
-![Alt text](/Add journal home.png "Optional title")
+![Alt text](/Addjournalhome.png "Optional title")
