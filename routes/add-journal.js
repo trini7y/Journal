@@ -31,7 +31,6 @@ class ID {
 }
 
 
-
 route.get('/add-journal', (req, res, next) => {
     res.render("add-journal", {
       pageTitle: "Add-Journal",
