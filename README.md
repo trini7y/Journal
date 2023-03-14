@@ -14,3 +14,6 @@ Here are some features of journal application
 + Add journal
 + Edit Journal
 + Add an image to journal 
+
+
+![Alt text](/add-journal.png "Optional title")
